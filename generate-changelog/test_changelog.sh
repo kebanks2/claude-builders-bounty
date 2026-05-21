@@ -52,4 +52,8 @@ assert_contains "- refactor: simplify session store" "$repo_dir/CHANGELOG.md"
 assert_contains "### Removed" "$repo_dir/CHANGELOG.md"
 assert_contains "- remove: delete legacy flag" "$repo_dir/CHANGELOG.md"
 
+command_file="$(cd "$script_dir/.." && pwd)/.claude/commands/generate-changelog.md"
+assert_contains "bash changelog.sh" "$command_file"
+assert_contains "/generate-changelog" "$script_dir/README.md"
+
 echo "test_changelog.sh passed"

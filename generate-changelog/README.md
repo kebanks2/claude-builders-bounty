@@ -20,6 +20,12 @@ bash changelog.sh --output docs/CHANGELOG.md
 bash changelog.sh --from v1.2.0 --to HEAD
 ```
 
+## Claude Code command
+
+This contribution also includes `.claude/commands/generate-changelog.md`, so a
+Claude Code user can run `/generate-changelog` from the repository and have the
+assistant execute the same `bash changelog.sh` workflow.
+
 ## Categorization
 
 | Section | Commit prefixes |
