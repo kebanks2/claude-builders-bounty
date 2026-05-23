@@ -33,3 +33,5 @@ npx n8n@2.21.7 import:workflow --input workflows/n8n-weekly-dev-summary/workflow
 ```
 
 The first command validates the bounty acceptance criteria statically. The second command verifies that a real n8n runtime can import the exported workflow JSON.
+
+Successful local execution evidence, including an n8n executions screenshot, is recorded in [`TEST_EVIDENCE.md`](./TEST_EVIDENCE.md).

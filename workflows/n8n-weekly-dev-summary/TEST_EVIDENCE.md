@@ -34,6 +34,12 @@ npm_config_cache=/tmp/npm-cache-n8n \
   - `POST /v1/messages` with model `claude-sonnet-4-20250514`
   - `POST /discord` with the formatted weekly summary payload
 
+## Screenshot
+
+![Successful n8n execution](./execution-success.png)
+
+The screenshot shows execution ID `#4` from May 23, 2026, completing successfully in n8n with every node green from `Manual Test Trigger` through `Deliver to Discord`.
+
 ## Expected n8n Manual Execution
 
 Production execution requires live `ANTHROPIC_API_KEY` and `DISCORD_WEBHOOK_URL` values. With those configured, click **Execute workflow** in n8n and confirm:
